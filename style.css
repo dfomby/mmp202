@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Limelight&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
+body {
+    font-family: "Merriweather", serif;
+    font-style: normal;
+
+}
+
+
+
+h1 {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-family: "Fredericka the Great", serif;
+    font-weight: 400;
+
+    letter-spacing: 0.05rem;
+    font-style: normal;
+
+}
+
+h1 a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 0px 5px;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: rgb(68, 119, 178);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav img {
+    float: right;
+    border: none;
+    padding-block: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 0;
+    margin-right: 0;
+
+    border: none;
+
+    align-items: center;
+    z-index: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav img:hover {
+    background-color: #7499cd;
+}
+
+
+/** menu bar end **/
+
+#name {
+    border-style: solid;
+    padding: 10px;
+    margin-top: 10px;
+    border-color: #7499cd;
+    background-color: #f4f9ff;
+
+
+}
+
+#name h2,
+h3 {
+    text-align: center;
+    margin: 5px;
+}
+
+
+/* Program Cards */
+
+
+.overlay {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  background-color: #7499cd;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.card {
+    transition-property: box-shadow, transform;
+    transition-duration: 0.5s;
+}
+
+
+
+.card h3 {
+    font-size: 0.8em;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.card:hover {
+    box-shadow: 5px 5px 5px #4a4a4a;
+    /* X shift, Y shift, Blur, Color */
+    transform: translateY(-5px);
+}
+
+/* Utility Classes */
+.responsive-img {
+    width: 100%;
+}
+
+
+
+@media (min-width:768px) {
+
+
+    .menuwrap:hover #top-nav {
+        display: flex;
+    }
+
+
+   .programs-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        grid-gap: 1.2em;
+    }
+
+.card {
+        height: 100%;
+
+    }
+
+}
