@@ -12,7 +12,8 @@ body {
 h1 {
     font-size: 1.6rem;
     text-transform: uppercase;
-    font-family: "Fredericka the Great", serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 10px;
     font-weight: 400;
 
     letter-spacing: 0.05rem;
@@ -35,6 +36,8 @@ header {
     align-items: center;
     position: relative;
     background-color: rgb(68, 119, 178);
+    color:white;
+
 }
 
 nav ul {
@@ -72,19 +75,23 @@ nav img:hover {
 /** menu bar end **/
 
 #name {
-    border-style: solid;
-    padding: 10px;
     margin-top: 10px;
-    border-color: #7499cd;
     background-color: #f4f9ff;
-
-
+    background: url("images/background.jpg") no-repeat center/cover;
+    padding: 10em;
 }
+
+#name h2{
+    font-size: 3rem;
+    
+}
+
+
 
 #name h2,
 h3 {
     text-align: center;
-    margin: 5px;
+    margin: 20px;
 }
 
 
@@ -100,11 +107,13 @@ h3 {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
+  visibility: hidden;
 
 }
 
 .container:hover .overlay {
   opacity: 1;
+  visibility: visible;
 }
 
 .text {
@@ -117,6 +126,8 @@ h3 {
 .card {
     transition-property: box-shadow, transform;
     transition-duration: 0.5s;
+    border-style: double;
+    margin-bottom: 30px;
 }
 
 
@@ -131,6 +142,15 @@ h3 {
     box-shadow: 5px 5px 5px #4a4a4a;
     /* X shift, Y shift, Blur, Color */
     transform: translateY(-5px);
+}
+
+.c-black {
+    color: black;
+    text-align: center;
+}
+
+.no-underline {
+    text-decoration: none;
 }
 
 /* Utility Classes */
@@ -151,11 +171,15 @@ h3 {
    .programs-cards {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-        grid-gap: 1.2em;
+        grid-gap: 5em;
+        padding-left: 50px;
+        padding-right:50px;
     }
 
 .card {
         height: 100%;
+        margin-bottom: 0;
+       
 
     }
 
